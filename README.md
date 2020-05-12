@@ -13,8 +13,8 @@ Marge-bot version listed in the [Chart.yaml](Chart.yaml)
 
 ### Inline
 ```bash
-$ helm repo add stable https://
-$ helm install <RELEASE_NAME> stable/marge-bot \
+$ helm repo add marge 'https://raw.githubusercontent.com/zhilyaev/marge-bot-helm/master'
+$ helm install <RELEASE_NAME> marge/marge-bot \
  --set "env[0].name=MARGE_GITLAB_URL" --set "env[0].value=<GITLAB_URL>" \
  --set "env[0].name=MARGE_AUTH_TOKEN" --set "env[0].value=<GITLAB_AUTH_TOKEN>"
  --set "env[0].name=MARGE_SSH_KEY" --set "env[0].value=$(cat ssh-key)"
