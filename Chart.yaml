@@ -1,6 +1,7 @@
 apiVersion: v2
 name: marge-bot
 description: Marge-bot is a merge-bot for GitLab
+icon: https://upload.wikimedia.org/wikipedia/en/0/0b/Marge_Simpson.png
 keywords:
   - merge
   - marge
