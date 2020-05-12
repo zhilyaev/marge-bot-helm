@@ -13,11 +13,11 @@ Marge-bot version listed in the [Chart.yaml](Chart.yaml)
 
 ### Inline
 ```bash
-$ helm repo add marge 'https://raw.githubusercontent.com/zhilyaev/marge-bot-helm/master'
-$ helm install <RELEASE_NAME> marge/marge-bot \
+$ helm repo add zhilyaev-marge 'https://raw.githubusercontent.com/zhilyaev/marge-bot-helm/master'
+$ helm install <RELEASE_NAME> zhilyaev-marge/marge-bot \
  --set "env[0].name=MARGE_GITLAB_URL" --set "env[0].value=<GITLAB_URL>" \
- --set "env[0].name=MARGE_AUTH_TOKEN" --set "env[0].value=<GITLAB_AUTH_TOKEN>"
- --set "env[0].name=MARGE_SSH_KEY" --set "env[0].value=$(cat ssh-key)"
+ --set "env[0].name=MARGE_AUTH_TOKEN" --set "env[0].value=<GITLAB_AUTH_TOKEN>" \
+ --set "env[0].name=MARGE_SSH_KEY"    --set "env[0].value=$(cat ssh-key)"
 ```
 
 ### With values file
