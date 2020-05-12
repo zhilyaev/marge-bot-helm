@@ -1,0 +1,43 @@
+# Default values for marge.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+replicaCount: 1
+
+image:
+  repository: smarketshq/marge-bot
+  pullPolicy: Always
+
+imagePullSecrets: []
+nameOverride: ""
+fullnameOverride: ""
+
+podSecurityContext: {}
+  # fsGroup: 2000
+
+securityContext: {}
+  # capabilities:
+  #   drop:
+  #   - ALL
+  # readOnlyRootFilesystem: true
+  # runAsNonRoot: true
+  # runAsUser: 1000
+
+
+resources: {}
+
+nodeSelector: {}
+
+tolerations: []
+
+affinity: {}
+
+env: []
+  #- name: MARGE_GITLAB_URL
+  #  value: https://gitlab.com
+  #- name: MARGE_AUTH_TOKEN
+  #  value: WoNtTelly0u
+  #- name: MARGE_SSH_KEY
+  #  value: |-
+  #   -----BEGIN RSA PRIVATE KEY-----
+  #   -----END RSA PRIVATE KEY-----
